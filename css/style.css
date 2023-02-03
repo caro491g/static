@@ -1,0 +1,6 @@
+.headerH1 h1 span {
+  display: inline-block;
+  transform: scaleX(-1);
+  color: #dc70df;
+  font-size: 4.5rem;
+}
