@@ -4,3 +4,43 @@
   color: #dc70df;
   font-size: 4.5rem;
 }
+
+/*************** Category list *********************/
+
+@media screen and (min-width: 800px) {
+  .brandList ol {
+    column-count: 2;
+    padding: 100px;
+  }
+}
+
+.brandList ol {
+  list-style-type: none;
+}
+
+.brandList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.brandList li:after {
+  display: block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  transition: all 0.3s;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 14"><path fill="none" stroke="white" d="M.8 12.87l7.5-6-7.5-6"></path></svg>');
+  background-repeat: no-repeat;
+  /* url('data:image/svg+xml;utf8,<svg class="svg-arrowRight" viewBox="0 0 9 14"><path fill="none" stroke="#979797" d="M.8 12.87l7.5-6-7.5-6"></path></svg>'); */
+}
+
+.brandList li:hover {
+  background: #ededef;
+  transition: transform 0.5s;
+}
+.brandList li:hover::after {
+  transform: translateX(10px);
+}
